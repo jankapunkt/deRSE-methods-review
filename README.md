@@ -86,7 +86,7 @@ For each publication, record at least the following variables:
 
 Do not infer a methodology merely from the presence of interviews, open-text answers, or human participants.
 
-## 5. Qualitative-Method Reporting Scale
+## Qualitative-Method Reporting Scale
 
 For publications using qualitative evidence, classify methodological reporting as:
 
@@ -104,61 +104,7 @@ The method is named, described, appropriately referenced, and accompanied by rel
 
 The scale evaluates **reporting**, not the intrinsic quality of the research.
 
-## 6. Review Procedure
-
-### Stage 1 — Corpus collection
-
-1. Retrieve all contributions from the selected proceedings.
-2. Record bibliographic metadata.
-3. Apply inclusion/exclusion criteria.
-4. Preserve the complete corpus manifest.
-
-### Stage 2 — Pilot coding
-
-1. At least two reviewers independently code the same small sample, preferably **5–10 papers or approximately 10% of the corpus**.
-2. Compare classifications.
-3. Discuss unclear categories and revise the codebook.
-4. Freeze the main extraction schema before full coding.
-
-Changes after this point must be documented in `CHANGELOG.md` or the study log.
-
-### Stage 3 — Main extraction
-
-Each included paper is coded using the agreed extraction scheme.
-
-Preferred approach:
-
-* publications involving qualitative or mixed methods are independently reviewed by at least two researchers;
-* remaining papers may be single-coded if resources are limited;
-* uncertain cases must be flagged rather than forced into a category.
-
-### Stage 4 — Resolution
-
-Disagreements are resolved through discussion.
-
-Record:
-
-* original classifications;
-* final agreed classification;
-* short resolution note for substantive disagreements.
-
-Do not overwrite raw reviewer decisions.
-
-## 7. Reliability and Consistency
-
-The main purpose of reviewer comparison is to improve consistency of interpretation rather than to claim purely objective classification.
-
-For categorical variables, report reviewer agreement where meaningful.
-
-Possible measures include:
-
-* percentage agreement;
-* Cohen's kappa for two reviewers;
-* Fleiss' kappa or Krippendorff's alpha if more reviewers or missing values make these more appropriate.
-
-Agreement statistics should supplement, not replace, documented consensus discussions.
-
-## 8. Analysis
+## Report Analysis
 
 Primary analysis is descriptive.
 
@@ -183,9 +129,9 @@ Where useful, cross-tabulate:
 * human involvement × methodological orientation;
 * qualitative evidence × reporting score.
 
-## 9. Interpretation Boundaries
+## Interpretation Boundaries
 
-The study concerns the **selected deRSE/ECEASST publication corpus**.
+The study concerns the **selected deRSE publication corpus**.
 
 It does not by itself establish:
 
@@ -198,37 +144,7 @@ Possible findings should therefore be phrased as evidence about **publication pr
 
 The study should explicitly report counterevidence, including well-developed qualitative, mixed-method, humanities, archaeological, participatory, or other interpretive approaches.
 
-## 10. Repository Structure
-
-```text
-.
-├── README.md
-├── protocol/
-│   ├── codebook.md
-│   ├── inclusion-exclusion.md
-│   └── protocol.md
-├── data/
-│   ├── corpus.csv
-│   ├── screening.csv
-│   ├── extraction_raw/
-│   └── extraction_resolved.csv
-├── scripts/
-│   ├── collect/
-│   ├── validate/
-│   └── analyse/
-├── results/
-│   ├── tables/
-│   └── figures/
-├── docs/
-│   └── study-log.md
-├── CITATION.cff
-├── LICENSE
-└── CHANGELOG.md
-```
-
-Do not manually edit generated result files where they can be reproduced from scripts.
-
-## 11. Reproducibility Requirements
+## Reproducibility Requirements
 
 The repository should contain:
 
@@ -245,7 +161,7 @@ The repository should contain:
 
 Where redistribution of article PDFs is not permitted, store only bibliographic metadata, persistent identifiers, and retrieval instructions.
 
-## 12. Collaboration Workflow
+## Collaboration Workflow
 
 1. Create an issue for methodological changes or unresolved classification questions.
 2. Use pull requests for changes to the protocol, codebook, extraction data, or analysis.
@@ -255,7 +171,7 @@ Where redistribution of article PDFs is not permitted, store only bibliographic 
 6. Add new categories only when existing categories clearly fail to represent the evidence.
 7. Prefer `unclear` plus a review note over unsupported inference.
 
-## 13. Minimal Reproduction Workflow
+## Minimal Reproduction Workflow
 
 A reproducer should be able to:
 
@@ -266,7 +182,7 @@ A reproducer should be able to:
 5. run the analysis scripts;
 6. regenerate all reported counts, tables, and figures.
 
-## 14. Expected Outputs
+## Expected Outputs
 
 The study should produce:
 
@@ -277,7 +193,7 @@ The study should produce:
 * an assessment of how explicitly qualitative methodology is reported;
 * evidence both supporting and challenging claims of methodological underrepresentation in RSE.
 
-## 15. Open Science
+## Open Science
 
 Where legally and ethically possible, the protocol, extraction data, analysis scripts, and derived results should be openly published and versioned.
 
